@@ -1,0 +1,77 @@
+.carousel {
+  max-width: 128rem;
+  width: 100%;
+  height: 25rem;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+  &__img {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 25rem;
+
+    transition: transform 1s;
+  }
+
+  &-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $color-white;
+    padding: 1rem 1.3rem;
+    border-radius: 50%;
+    width: 4.2rem;
+    height: 4.2rem;
+    user-select: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease-in;
+
+    svg {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  &:hover &-btn {
+    opacity: 1;
+  }
+
+  &__prev-btn {
+    left: 3rem;
+  }
+
+  &__next-btn {
+    right: 3rem;
+  }
+
+  &__dot-btn {
+    width: 0.8rem;
+    height: 0.8rem;
+    opacity: 0;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background-color: #c1c1c1;
+    transition: opacity 0.2s ease-in;
+  }
+
+  &:hover &__dot-btn {
+    opacity: 1;
+  }
+
+  &__dot--active {
+    background-color: $color-white;
+  }
+}
+
+.dots {
+  position: absolute;
+  bottom: 1rem;
+  right: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+}

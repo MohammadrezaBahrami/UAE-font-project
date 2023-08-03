@@ -1,0 +1,25 @@
+@mixin flexContainer($horizontalAlign: center, $verticalAlign: center) {
+  display: flex;
+  justify-content: $horizontalAlign;
+  align-items: $verticalAlign;
+}
+
+@mixin btn(
+  $backgroundColor: #009ef7,
+  $hoverColor: #0493e6,
+  $color: $color-white
+) {
+  background-color: $backgroundColor;
+  color: $color;
+  margin-bottom: 2px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-size: 1.4rem;
+  -webkit-transition: 0.2s ease-in background-color;
+  transition: 0.2s ease-in background-color;
+  text-align: center;
+  cursor: pointer;
+  &:hover {
+    background-color: $hoverColor;
+  }
+}

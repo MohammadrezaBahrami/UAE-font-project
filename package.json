@@ -1,0 +1,20 @@
+{
+  "name": "lcshopp_project",
+  "version": "1.0.0",
+  "description": "lcshopp project for UAE",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Mohammadreza Bahrami",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.9.3",
+    "parcel": "^2.9.3",
+    "sass": "^1.64.1"
+  },
+  "dependencies": {
+    "swiper": "^10.1.0"
+  }
+}

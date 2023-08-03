@@ -1,0 +1,16 @@
+.related__products {
+  padding: 1rem 2.2rem;
+
+  &-title {
+    font-size: 1.4rem;
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+
+  &-container {
+    gap: .8rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(19rem, 1fr));
+    justify-content: center;
+  }
+}

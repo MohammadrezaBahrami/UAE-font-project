@@ -1,0 +1,35 @@
+.category {
+  padding: 1rem 2rem;
+  background-color: $color-white;
+}
+
+.primary__category {
+  // height: 8rem;
+  margin: 1px 0;
+  position: relative;
+
+  &--wrapper {
+    @include flexContainer(flex-start);
+    height: 100%;
+  }
+
+  &--item {
+    @include flexContainer();
+    gap: 0.8rem;
+    font-size: 1.2rem;
+    flex-direction: column;
+    margin-right: 1rem;
+    padding: 1rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: unset;
+    &:hover {
+      background-color: #e2e2e6;
+    }
+
+    &-active {
+      background-color: #e2e2e6;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+.header {
+  width: 100%;
+  max-width: 128rem;
+  height: 6.6rem;
+  background: $header-background-color;
+  padding: 0 2rem;
+  color: #fff;
+
+  &__container {
+    @include flexContainer(space-between);
+    width: 100%;
+    height: 100%;
+  }
+
+  &__logo {
+    width: 19.6rem;
+    height: 4.6rem;
+  }
+
+  &__search-container {
+    width: 40rem;
+    position: relative;
+  }
+
+  &__search-input {
+    width: 100%;
+    padding: 1.2rem;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+
+  &__search-icon {
+    width: 1.5rem;
+    height: 1.6rem;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+  }
+
+  &__links {
+    li a {
+      @include flexContainer;
+      gap: 0.8rem;
+      font-size: 1.3rem;
+    }
+    @include flexContainer(space-between);
+    gap: 2rem;
+    &-register-icon,
+    &-user-icon {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+}

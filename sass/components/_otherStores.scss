@@ -1,0 +1,99 @@
+.other__stores {
+  margin: 1rem 0;
+  border-radius: 4px;
+
+  &-container {
+    background-color: $color-white;
+    border-radius: 4px;
+  }
+
+  &-card-container {
+    padding: 1rem 1rem 0;
+  }
+}
+
+
+.other__store {
+  &-card {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    border-bottom: 1px solid #dfe3e8;
+  }
+
+  &-card-right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    &-top {
+      @include flexContainer(space-between);
+      width: 100%;
+    }
+
+    &-middle {
+      flex-grow: 1;
+      p {
+        padding: .8rem 0;
+        font-size: 1.4rem;
+        opacity: .92;
+      }
+    }
+
+    &-bottom {
+      @include flexContainer(space-between);
+
+    }
+  }
+
+
+  &-product-img {
+    width: 15rem;
+    height: 15rem;
+    object-fit: contain;
+  }
+
+  &-img {
+    margin-left: 1rem;
+
+  }
+
+  &-btn {
+    color: $color-white;
+    font-size: 1.8rem;
+
+  }
+
+  &-btn-container {
+    @include btn();
+    padding: 1rem;
+    margin: 1rem;
+
+  }
+
+}
+
+.other--off {
+  margin-right: 1rem;
+}
+
+
+.product__details {
+  padding: 1rem 2rem;
+  max-height: 115rem;
+  overflow-y: auto;
+  position: relative;
+  background-color: $color-white;
+
+  &-name{
+    font-size: 1.8rem;
+    border-bottom: 1px solid #c4c4c4;
+    padding: 10px 0;
+  }
+
+  &-description {
+    font-size: 1.4rem;
+    padding: 1rem 0;
+    opacity: .92;
+  }
+}

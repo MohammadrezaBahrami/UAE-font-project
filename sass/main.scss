@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@import "./abstracts/variables";
+@import "./abstracts/colors";
+@import "./abstracts/mixins";
+@import "./base/base";
+@import "./base/reset";
+
+@import "./layouts/header";
+@import "./components/primaryCategory";
+@import "./components/secondaryCategory";
+@import "components/carousel";
+@import "components/offers";
+@import "components/card";
+@import "components/ads";
+@import "pages/third";
+@import "components/storeCard";
+@import "components/store";
+@import "components/otherStores";
+@import "components/tabs";
+@import "components/relatedProducts";
+@import "pages/second";
+@import "components/subCategory";

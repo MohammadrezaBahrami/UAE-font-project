@@ -1,0 +1,19 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: $body-background-color;
+  overflow-x: hidden;
+  max-width: 128rem;
+  margin: auto;
+  font-family: "Poppins", sans-serif;
+}
+
+svg {
+  vertical-align: -0.5rem;
+}
+
+.btn {
+  @include btn();
+}

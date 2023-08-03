@@ -1,0 +1,35 @@
+.offers {
+  background-color: #001aff;
+  padding: 6rem 1rem 1rem;
+  @include flexContainer(flex-start);
+  gap: 4rem;
+
+  &__left {
+    width: 25rem;
+    @include flexContainer(space-between, center);
+    flex-direction: column;
+    gap: 6rem;
+    text-align: center;
+
+    &--text {
+      font-size: 4.8rem;
+      color: $color-white;
+      letter-spacing: 2px;
+    }
+
+    &--img {
+      width: 15rem;
+      height: 15rem;
+    }
+  }
+
+  button {
+    font-size: 2rem;
+    padding: 1rem 3rem;
+    background-color: transparent;
+    border: 1px solid $color-white;
+    border-radius: 6px;
+    text-transform: uppercase;
+    outline: none;
+  }
+}
