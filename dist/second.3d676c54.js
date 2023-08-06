@@ -581,6 +581,11 @@ var _swiper = require("./swiper");
 var _swiperDefault = parcelHelpers.interopDefault(_swiper);
 var _primaryCategory = require("./primaryCategory");
 var _primaryCategoryDefault = parcelHelpers.interopDefault(_primaryCategory);
+document.querySelectorAll("a").forEach((link)=>{
+    link.addEventListener("click", function(e) {
+        e.preventDefault();
+    });
+});
 
 },{"./slider":"9ICf4","./swiper":"8TPxA","./primaryCategory":"6vUMu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9ICf4":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -735,4 +740,4 @@ exports.default = new PrimaryCategory();
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["iSukY","4OBvF"], "4OBvF", "parcelRequiree459")
 
-//# sourceMappingURL=index.3d676c54.js.map
+//# sourceMappingURL=second.3d676c54.js.map

@@ -4,7 +4,7 @@
   "description": "lcshopp project for UAE",
   "main": "index.js",
   "scripts": {
-    "start": "parcel index.html",
+    "start": "parcel second.html",
     "build": "parcel build index.html"
   },
   "author": "Mohammadreza Bahrami",

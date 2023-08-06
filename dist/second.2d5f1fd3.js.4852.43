@@ -142,13 +142,13 @@
       this[globalName] = mainExports;
     }
   }
-})({"iSukY":[function(require,module,exports) {
+})({"6EF4h":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "d6ea1d42532a7575";
-module.bundle.HMR_BUNDLE_ID = "85cd457c3d676c54";
+module.bundle.HMR_BUNDLE_ID = "c5b971b52d5f1fd3";
 "use strict";
 /* global HMR_HOST, HMR_PORT, HMR_ENV_HASH, HMR_SECURE, chrome, browser, __parcel__import__, __parcel__importScripts__, ServiceWorkerGlobalScope */ /*::
 import type {
@@ -573,72 +573,37 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
     });
 }
 
-},{}],"4OBvF":[function(require,module,exports) {
+},{}],"cJx0y":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _slider = require("./slider");
-var _sliderDefault = parcelHelpers.interopDefault(_slider);
-var _swiper = require("./swiper");
-var _swiperDefault = parcelHelpers.interopDefault(_swiper);
-var _primaryCategory = require("./primaryCategory");
-var _primaryCategoryDefault = parcelHelpers.interopDefault(_primaryCategory);
+var _swiperJs = require("../home/swiper.js");
+var _swiperJsDefault = parcelHelpers.interopDefault(_swiperJs);
+const asideCategoriesContainer = document.querySelector(".aside__categories-container");
+asideCategoriesContainer.addEventListener("click", function(e) {
+    const header = e.target.closest(".aside__categories-header");
+    const item = e.target.closest(".aside__categories-item");
+    if (!header) return;
+    document.querySelector(".aside__categories-menu").classList.toggle("aside__categories-menu--active");
+    header.classList.toggle("aside__categories-header--active");
+    if (!item) return;
+    item.classList.toggle(".aside__categories-item--active");
+});
 
-},{"./slider":"9ICf4","./swiper":"8TPxA","./primaryCategory":"6vUMu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9ICf4":[function(require,module,exports) {
+},{"../home/swiper.js":"8TPxA","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8TPxA":[function(require,module,exports) {
+// init Swiper:
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-class Slider {
-    _carouselParentEl = document.querySelector(".carousel");
-    _carouselImages = document.querySelectorAll(".carousel__img");
-    _prevBtn = document.querySelector(".carousel__prev-btn");
-    _nextBtn = document.querySelector(".carousel__next-btn");
-    _dotsContainer = document.querySelector(".dots");
-    _curSlide = 0;
-    _maxSlide = this._carouselImages.length;
-    constructor(){
-        this._carouselImages.forEach((img, i)=>img.style.transform = `translateX(${100 * i}%)`);
-        this._createDots();
-        this._goToSlide(0);
-        this._activateDot(0);
-        this._nextBtn.addEventListener("click", this._nextSlide.bind(this));
-        this._prevBtn.addEventListener("click", this._prevSlide.bind(this));
-        document.addEventListener("keydown", (function(e) {
-            e.key === "ArrowRight" && this._nextSlide() || e.key === "ArrowLeft" && this._prevSlide();
-        }).bind(this));
-        this._dotsContainer.addEventListener("click", (function(e) {
-            if (e.target.classList.contains("carousel__dot-btn")) {
-                const { slide } = e.target.dataset;
-                this._goToSlide(slide);
-                this._activateDot(slide);
-            }
-        }).bind(this));
+exports.default = swiper = new Swiper(".swiper", {
+    // configure Swiper to use modules
+    direction: "horizontal",
+    loop: false,
+    slidesPerView: "auto",
+    resizeReInit: true,
+    slidesOffsetAfter: 20,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
     }
-    _activateDot(slide) {
-        document.querySelectorAll(`.carousel__dot-btn`).forEach((dot)=>dot.classList.remove("carousel__dot--active"));
-        document.querySelector(`.carousel__dot-btn[data-slide="${slide}"]`).classList.add("carousel__dot--active");
-    }
-    _createDots() {
-        this._carouselImages.forEach((_, i)=>{
-            this._dotsContainer.insertAdjacentHTML("beforeend", `<button class="carousel__dot-btn" data-slide="${i}"></button>`);
-        });
-    }
-    _goToSlide(slide) {
-        this._carouselImages.forEach((img, i)=>{
-            img.style.transform = `translateX(${100 * (i - slide)}%)`;
-        });
-    }
-    _nextSlide() {
-        if (this._curSlide === this._maxSlide - 1) this._curSlide = 0;
-        else this._curSlide++;
-        this._goToSlide(this._curSlide);
-        this._activateDot(this._curSlide);
-    }
-    _prevSlide() {
-        if (this._curSlide === 0) this._curSlide = this._maxSlide - 1;
-        else this._curSlide--;
-        this._goToSlide(this._curSlide);
-        this._activateDot(this._curSlide);
-    }
-}
-exports.default = new Slider();
+});
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
@@ -670,69 +635,6 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"8TPxA":[function(require,module,exports) {
-// init Swiper:
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-exports.default = swiper = new Swiper(".swiper", {
-    // configure Swiper to use modules
-    direction: "horizontal",
-    loop: false,
-    slidesPerView: "auto",
-    resizeReInit: true,
-    slidesOffsetAfter: 20,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-    }
-});
+},{}]},["6EF4h","cJx0y"], "cJx0y", "parcelRequiree459")
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6vUMu":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-class PrimaryCategory {
-    _primaryCategoryContainer = document.querySelector(".primary__category");
-    _subCategories = this._primaryCategoryContainer.querySelectorAll(".sub__category");
-    _categoryItems = this._primaryCategoryContainer.querySelectorAll(".primary__category--item");
-    constructor(){
-        this._primaryCategoryContainer.addEventListener("click", this._toggleCategory.bind(this));
-        document.addEventListener("click", this._hideSubCategory.bind(this));
-    }
-    _toggleCategory(e) {
-        this._activeCategory(e);
-        const item = e.target.closest(".primary__category--item");
-        if (!item) return;
-        this._categoryHandler(item);
-    }
-    _categoryHandler(item) {
-        this._subCategories.forEach((category)=>{
-            if (category.classList.contains("sub__category--active") && item.dataset.category === category.dataset.category) item.classList.remove("primary__category--item-active");
-            if (item.dataset.category === category.dataset.category) category.classList.toggle("sub__category--active");
-            if (item.dataset.category !== category.dataset.category) category.classList.remove("sub__category--active");
-        });
-    }
-    _removeActiveCategoryItem() {
-        this._categoryItems.forEach((cat)=>{
-            cat.classList.remove("primary__category--item-active");
-        });
-    }
-    _activeCategory(e) {
-        const catItem = e.target.closest(".primary__category--item");
-        if (!catItem) return;
-        this._removeActiveCategoryItem();
-        catItem.classList.add("primary__category--item-active");
-    }
-    _hideSubCategory(e) {
-        if (!this._primaryCategoryContainer.contains(e.target)) {
-            this._subCategories.forEach((subCat)=>{
-                subCat.classList.remove("sub__category--active");
-            });
-            this._removeActiveCategoryItem();
-        }
-    }
-}
-exports.default = new PrimaryCategory();
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["iSukY","4OBvF"], "4OBvF", "parcelRequiree459")
-
-//# sourceMappingURL=index.3d676c54.js.map
+//# sourceMappingURL=second.2d5f1fd3.js.map
