@@ -549,7 +549,7 @@ a {
   display: flex;
 }
 
-.wish-compare {
+.wishlist-icon, .compare-icon {
   cursor: pointer;
   border: 1px solid #d8d5d5;
   border-radius: 4px;
@@ -559,16 +559,16 @@ a {
   transition: all .1s ease-in;
 }
 
-.wish-compare use {
+.wishlist-icon use, .compare-icon use {
   pointer-events: none;
 }
 
-.compare-icon:hover, .nav__compare-icon:hover {
+.compare-icon:hover {
   color: #50cd89;
   border-color: #50cd89;
 }
 
-.wishlist-icon:hover, .nav__wishlist-icon:hover {
+.wishlist-icon:hover {
   color: #d73948;
   border-color: #d73948;
 }
@@ -1103,6 +1103,7 @@ a {
 
 .popup__product:hover svg {
   opacity: 1;
+  visibility: 1;
 }
 
 .popup__product:hover img {
@@ -1119,6 +1120,7 @@ a {
 
 .popup__product svg {
   opacity: 0;
+  visibility: 0;
   cursor: pointer;
   width: 3rem;
   height: 3rem;
@@ -1128,12 +1130,8 @@ a {
   transform: translate(-50%, -50%);
 }
 
-.popup__close {
-  cursor: pointer;
-}
-
 .popup__close svg {
-  pointer-events: none;
+  cursor: pointer;
   width: 2rem;
   height: 2rem;
 }
@@ -1146,74 +1144,26 @@ a {
   font-size: 1.2rem;
 }
 
-.wishlisted {
-  color: #d73948;
-  border-color: #d73948;
-}
-
-.compared {
-  color: #50cd89;
-  border-color: #50cd89;
-}
-
-.popup__message {
-  color: #fff;
-  z-index: 3;
+.message {
   border-radius: 6px;
   padding: 1rem 2rem;
-  font-size: 1.5rem;
-  transition: top .4s ease-in;
-  position: fixed;
-  top: -5rem;
-  left: 50%;
-  transform: translateX(-50%);
+  font-size: 2rem;
+  position: absolute;
+  top: 10rem;
+  right: 50%;
+  transform: translateX(50%);
 }
 
-.popup__message.message--active {
-  top: 15rem;
+.message--active {
+  transform: translateY(-100%);
 }
 
-.popup__message.error {
-  background-color: #d73948;
+.error {
+  background-color: red;
 }
 
-.popup__message.success {
-  background-color: #50cd89;
+.success {
+  background-color: green;
 }
 
-.nav {
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 5rem;
-  padding: 1rem 2rem;
-  display: flex;
-}
-
-.nav__container {
-  gap: 1rem;
-  font-size: 1.4rem;
-  display: flex;
-}
-
-.nav__wishlist-icon {
-  margin-right: 1rem;
-}
-
-.nav__item {
-  padding: 0 1rem 0 0;
-}
-
-.nav__item:not(:last-child) {
-  border-right: .1rem solid #c0bfbf;
-}
-
-.nav__item a {
-  color: #000;
-}
-
-.nav__item a:hover {
-  color: #4b4949;
-}
-
-/*# sourceMappingURL=index.8d8029cf.css.map */
+/*# sourceMappingURL=third.b58dee26.css.map */

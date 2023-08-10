@@ -1,22 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"
-      defer
-    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer=""></script>
 
-    <link rel="stylesheet" href="./sass/main.scss" />
+    <link rel="stylesheet" href="/index.8d8029cf.css">
 
-    <script type="module" src="./scripts/home/home.js" defer></script>
+    <script src="/index.3d676c54.js" defer=""></script>
 
     <title>Lcshopp</title>
   </head>
@@ -25,20 +19,16 @@
     <header class="header">
       <div class="header__container">
         <!-- Header Logo -->
-        <a href="index.html" class="header__logo-container">
-          <img src="./src/img/logo.webp" alt="" class="header__logo" />
+        <a href="/index.html" class="header__logo-container">
+          <img src="/logo.5920834c.webp" alt="" class="header__logo">
         </a>
         <!-- Header Logo -->
 
         <!-- Header Search -->
         <form class="header__search-container">
-          <input
-            type="text"
-            class="header__search-input"
-            placeholder="Search for brands, products and more"
-          />
+          <input type="text" class="header__search-input" placeholder="Search for brands, products and more">
           <svg class="header__search-icon">
-            <use xlink:href="./src/img/icons.svg#search"></use>
+            <use xlink:href="/icons.21bad73c.svg#search"></use>
           </svg>
         </form>
         <!-- Header Search -->
@@ -48,7 +38,7 @@
           <li class="header__links-container">
             <a class="header__links-anchor" href="">
               <svg class="header__links-user-icon">
-                <use xlink:href="./src/img/icons.svg#user"></use>
+                <use xlink:href="/icons.21bad73c.svg#user"></use>
               </svg>
               <span>register</span>
             </a>
@@ -56,7 +46,7 @@
           <li class="header__links-container">
             <a href="">
               <svg class="header__links-register-icon">
-                <use xlink:href="./src/img/icons.svg#register"></use>
+                <use xlink:href="/icons.21bad73c.svg#register"></use>
               </svg>
               <span>record business</span>
             </a>
@@ -68,59 +58,27 @@
     </header>
     <!-- Header -->
 
-    <!-- NavBar -->
-    <nav class="nav">
-      <ul class="nav__container">
-        <li class="nav__item"><a href="index.html">Home</a></li>
-        <li class="nav__item"><a href="second.html">Second</a></li>
-        <li class="nav__item"><a href="third.html">Third</a></li>
-      </ul>
-    </nav>
-    <!-- NavBar -->
-
     <!-- Primary Category -->
     <section class="category primary__category">
       <div class="swiper primary__category--swiper">
         <div class="primary__category--wrapper swiper-wrapper">
           <div class="primary__category--item swiper-slide" data-category="art">
-            <img
-              src="./src/img/babysitter.png"
-              alt=""
-              class="primary__category--img"
-            />
+            <img src="/babysitter.8fd1aff8.png" alt="" class="primary__category--img">
 
             <span>Mother Care</span>
           </div>
-          <div
-            class="primary__category--item swiper-slide"
-            data-category="style"
-          >
-            <img
-              src="./src/img/babysitter.png"
-              alt=""
-              class="primary__category--img"
-            />
+          <div class="primary__category--item swiper-slide" data-category="style">
+            <img src="/babysitter.8fd1aff8.png" alt="" class="primary__category--img">
 
             <span>Mother Care</span>
           </div>
           <div class="primary__category--item swiper-slide" data-category="toy">
-            <img
-              src="./src/img/babysitter.png"
-              alt=""
-              class="primary__category--img"
-            />
+            <img src="/babysitter.8fd1aff8.png" alt="" class="primary__category--img">
 
             <span>Mother Care</span>
           </div>
-          <div
-            class="primary__category--item swiper-slide"
-            data-category="sport"
-          >
-            <img
-              src="./src/img/babysitter.png"
-              alt=""
-              class="primary__category--img"
-            />
+          <div class="primary__category--item swiper-slide" data-category="sport">
+            <img src="/babysitter.8fd1aff8.png" alt="" class="primary__category--img">
 
             <span>Mother Care</span>
           </div>
@@ -128,12 +86,12 @@
 
         <span class="swiper-button-prev prev-btn swiper--btn">
           <svg class="prev-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevLeft"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevLeft"></use>
           </svg>
         </span>
         <span class="swiper-button-next next-btn swiper--btn">
           <svg class="next-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevRight"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevRight"></use>
           </svg>
         </span>
       </div>
@@ -147,7 +105,7 @@
         <div class="sub__category--body">
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Art</a></li>
@@ -157,7 +115,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Art</a></li>
@@ -167,7 +125,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Art</a></li>
@@ -177,7 +135,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Art</a></li>
@@ -187,7 +145,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Art</a></li>
@@ -197,7 +155,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Art</a></li>
@@ -207,7 +165,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Art</a></li>
@@ -217,7 +175,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Art</a></li>
@@ -237,7 +195,7 @@
         <div class="sub__category--body">
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Style</a></li>
@@ -247,7 +205,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Style</a></li>
@@ -257,7 +215,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Style</a></li>
@@ -267,7 +225,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Style</a></li>
@@ -277,7 +235,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Style</a></li>
@@ -287,7 +245,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Style</a></li>
@@ -297,7 +255,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Style</a></li>
@@ -307,7 +265,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Style</a></li>
@@ -327,7 +285,7 @@
         <div class="sub__category--body">
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Toy</a></li>
@@ -337,7 +295,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Toy</a></li>
@@ -347,7 +305,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Toy</a></li>
@@ -357,7 +315,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Toy</a></li>
@@ -367,7 +325,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Toy</a></li>
@@ -377,7 +335,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Toy</a></li>
@@ -387,7 +345,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Toy</a></li>
@@ -397,7 +355,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Toy</a></li>
@@ -417,7 +375,7 @@
         <div class="sub__category--body">
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Sport</a></li>
@@ -427,7 +385,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Sport</a></li>
@@ -437,7 +395,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Sport</a></li>
@@ -447,7 +405,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Sport</a></li>
@@ -457,7 +415,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Sport</a></li>
@@ -467,7 +425,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Sport</a></li>
@@ -477,7 +435,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Sport</a></li>
@@ -487,7 +445,7 @@
           </ul>
           <ul class="sub__category--body-list">
             <li class="sub__category--first-item">
-              <img src="./src/img/categories-vector.png" alt="" />
+              <img src="/categories-vector.a374f706.png" alt="">
               <span>Sporting Goods</span>
             </li>
             <li><a href="">Sport</a></li>
@@ -505,200 +463,116 @@
     <section class="category secondary__category swiper">
       <div class="swiper-wrapper secondary__category--wrapper">
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
         <a href="" class="secondary__category__item swiper-slide">
-          <img
-            src="./src/img/secCategroy.webp"
-            alt=""
-            class="secondary__category__img"
-          />
+          <img src="/secCategroy.a5cf53a5.webp" alt="" class="secondary__category__img">
           <span>Video and Audio</span>
         </a>
       </div>
 
       <span class="swiper-button-prev prev-btn swiper--btn">
         <svg class="prev-btn__icon">
-          <use xlink:href="./src/img/icons.svg#chevLeft"></use>
+          <use xlink:href="/icons.21bad73c.svg#chevLeft"></use>
         </svg>
       </span>
       <span class="swiper-button-next next-btn swiper--btn">
         <svg class="next-btn__icon">
-          <use xlink:href="./src/img/icons.svg#chevRight"></use>
+          <use xlink:href="/icons.21bad73c.svg#chevRight"></use>
         </svg>
       </span>
     </section>
     <!-- Secondary Category -->
     <!-- First ad -->
     <section class="carousel">
-      <img src="./src/img/first-ad.webp" alt="" class="carousel__img" />
-      <img src="./src/img/first-ad-2.webp" alt="" class="carousel__img" />
-      <img src="./src/img/first-ad.webp" alt="" class="carousel__img" />
+      <img src="/first-ad.c0849065.webp" alt="" class="carousel__img">
+      <img src="/first-ad-2.b75fdf11.webp" alt="" class="carousel__img">
+      <img src="/first-ad.c0849065.webp" alt="" class="carousel__img">
       <span class="carousel__next-btn carousel-btn">
         <svg>
-          <use xlink:href="./src/img/icons.svg#chevRight"></use>
+          <use xlink:href="/icons.21bad73c.svg#chevRight"></use>
         </svg>
       </span>
       <span class="carousel__prev-btn carousel-btn">
         <svg>
-          <use xlink:href="./src/img/icons.svg#chevLeft"></use>
+          <use xlink:href="/icons.21bad73c.svg#chevLeft"></use>
         </svg>
       </span>
       <div class="dots"></div>
@@ -710,7 +584,7 @@
       <div class="offers__left">
         <div>
           <span class="offers__left--text">Amazing Offers</span>
-          <img src="./src/img/offer.webp" alt="" class="offers__left--img" />
+          <img src="/offer.176d1ea6.webp" alt="" class="offers__left--img">
         </div>
         <button>
           <a href="">See All</a>
@@ -722,7 +596,7 @@
         <div class="offers__cards-container cards--container swiper-wrapper">
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -732,7 +606,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -743,7 +617,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -753,7 +627,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -764,7 +638,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -774,7 +648,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -785,7 +659,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -795,7 +669,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -806,7 +680,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -816,7 +690,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -827,7 +701,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -837,7 +711,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -848,7 +722,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -858,7 +732,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -870,12 +744,12 @@
         </div>
         <span class="swiper-button-prev prev-btn swiper--btn">
           <svg class="prev-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevLeft"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevLeft"></use>
           </svg>
         </span>
         <span class="swiper-button-next next-btn swiper--btn">
           <svg class="next-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevRight"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevRight"></use>
           </svg>
         </span>
       </div>
@@ -893,7 +767,7 @@
         <div class="product-cards__container cards--container swiper-wrapper">
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -903,7 +777,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -914,7 +788,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -924,7 +798,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -935,7 +809,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -945,7 +819,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -956,7 +830,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -966,7 +840,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -977,7 +851,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -987,7 +861,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -998,7 +872,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1008,7 +882,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1019,7 +893,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1029,7 +903,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1040,7 +914,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1050,7 +924,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1062,12 +936,12 @@
         </div>
         <span class="swiper-button-prev prev-btn swiper--btn">
           <svg class="prev-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevLeft"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevLeft"></use>
           </svg>
         </span>
         <span class="swiper-button-next next-btn swiper--btn">
           <svg class="next-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevRight"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevRight"></use>
           </svg>
         </span>
       </div>
@@ -1077,11 +951,7 @@
     <!-- Second ad -->
     <section class="ad second-ad">
       <a href="">
-        <img
-          src="./src/img/second-ad.webp"
-          alt=""
-          class="ad__img second-ad__img"
-        />
+        <img src="/second-ad.76fa53f2.webp" alt="" class="ad__img second-ad__img">
       </a>
     </section>
     <!-- Second ad -->
@@ -1096,7 +966,7 @@
         <div class="product-cards__container cards--container swiper-wrapper">
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1106,7 +976,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1117,7 +987,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1127,7 +997,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1138,7 +1008,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1148,7 +1018,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1159,7 +1029,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1169,7 +1039,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1180,7 +1050,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1190,7 +1060,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1201,7 +1071,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1211,7 +1081,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1222,7 +1092,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1232,7 +1102,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1243,7 +1113,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1253,7 +1123,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1265,12 +1135,12 @@
         </div>
         <span class="swiper-button-prev prev-btn swiper--btn">
           <svg class="prev-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevLeft"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevLeft"></use>
           </svg>
         </span>
         <span class="swiper-button-next next-btn swiper--btn">
           <svg class="next-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevRight"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevRight"></use>
           </svg>
         </span>
       </div>
@@ -1280,11 +1150,7 @@
     <!-- third ad -->
     <section class="ad third-ad">
       <a href="">
-        <img
-          src="./src/img/third-ad.webp"
-          alt=""
-          class="ad__img third-ad__img"
-        />
+        <img src="/third-ad.196310c3.webp" alt="" class="ad__img third-ad__img">
       </a>
     </section>
     <!-- third ad -->
@@ -1299,7 +1165,7 @@
         <div class="product-cards__container cards--container swiper-wrapper">
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1309,7 +1175,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1320,7 +1186,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1330,7 +1196,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1341,7 +1207,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1351,7 +1217,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1362,7 +1228,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1372,7 +1238,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1383,7 +1249,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1393,7 +1259,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1404,7 +1270,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1414,7 +1280,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1425,7 +1291,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1435,7 +1301,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1446,7 +1312,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1456,7 +1322,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1468,12 +1334,12 @@
         </div>
         <span class="swiper-button-prev prev-btn swiper--btn">
           <svg class="prev-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevLeft"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevLeft"></use>
           </svg>
         </span>
         <span class="swiper-button-next next-btn swiper--btn">
           <svg class="next-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevRight"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevRight"></use>
           </svg>
         </span>
       </div>
@@ -1483,25 +1349,13 @@
     <!-- fourth ad -->
     <section class="ad fourth-ad">
       <a href="">
-        <img
-          src="./src/img/fourth-ad.webp"
-          alt=""
-          class="ad__img fourth-ad__img"
-        />
+        <img src="/fourth-ad.f713e47e.webp" alt="" class="ad__img fourth-ad__img">
       </a>
       <a href="">
-        <img
-          src="./src/img/fourth-ad.webp"
-          alt=""
-          class="ad__img fourth-ad__img"
-        />
+        <img src="/fourth-ad.f713e47e.webp" alt="" class="ad__img fourth-ad__img">
       </a>
       <a href="">
-        <img
-          src="./src/img/fourth-ad.webp"
-          alt=""
-          class="ad__img fourth-ad__img"
-        />
+        <img src="/fourth-ad.f713e47e.webp" alt="" class="ad__img fourth-ad__img">
       </a>
     </section>
     <!-- fourth ad -->
@@ -1516,7 +1370,7 @@
         <div class="product-cards__container cards--container swiper-wrapper">
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1526,7 +1380,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1537,7 +1391,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1547,7 +1401,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1558,7 +1412,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1568,7 +1422,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1579,7 +1433,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1589,7 +1443,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1600,7 +1454,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1610,7 +1464,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1621,7 +1475,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1631,7 +1485,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1642,7 +1496,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1652,7 +1506,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1663,7 +1517,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1673,7 +1527,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1685,12 +1539,12 @@
         </div>
         <span class="swiper-button-prev prev-btn swiper--btn">
           <svg class="prev-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevLeft"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevLeft"></use>
           </svg>
         </span>
         <span class="swiper-button-next next-btn swiper--btn">
           <svg class="next-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevRight"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevRight"></use>
           </svg>
         </span>
       </div>
@@ -1700,11 +1554,7 @@
     <!-- fifth ad -->
     <section class="ad fifth-ad">
       <a href="">
-        <img
-          src="./src/img/fifth-ad.webp"
-          alt=""
-          class="ad__img fifth-ad__img"
-        />
+        <img src="/fifth-ad.cecfe6f4.webp" alt="" class="ad__img fifth-ad__img">
       </a>
     </section>
     <!-- fifth ad -->
@@ -1719,7 +1569,7 @@
         <div class="product-cards__container cards--container swiper-wrapper">
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1729,7 +1579,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1740,7 +1590,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1750,7 +1600,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1761,7 +1611,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1771,7 +1621,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1782,7 +1632,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1792,7 +1642,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1803,7 +1653,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1813,7 +1663,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1824,7 +1674,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1834,7 +1684,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1845,7 +1695,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1855,7 +1705,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1866,7 +1716,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1876,7 +1726,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1888,12 +1738,12 @@
         </div>
         <span class="swiper-button-prev prev-btn swiper--btn">
           <svg class="prev-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevLeft"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevLeft"></use>
           </svg>
         </span>
         <span class="swiper-button-next next-btn swiper--btn">
           <svg class="next-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevRight"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevRight"></use>
           </svg>
         </span>
       </div>
@@ -1903,25 +1753,13 @@
     <!--  Sixth ad  -->
     <section class="ad sixth-ad">
       <a href="">
-        <img
-          src="./src/img/fourth-ad.webp"
-          alt=""
-          class="ad__img sixth-ad__img"
-        />
+        <img src="/fourth-ad.f713e47e.webp" alt="" class="ad__img sixth-ad__img">
       </a>
       <a href="">
-        <img
-          src="./src/img/fourth-ad.webp"
-          alt=""
-          class="ad__img sixth-ad__img"
-        />
+        <img src="/fourth-ad.f713e47e.webp" alt="" class="ad__img sixth-ad__img">
       </a>
       <a href="">
-        <img
-          src="./src/img/fourth-ad.webp"
-          alt=""
-          class="ad__img sixth-ad__img"
-        />
+        <img src="/fourth-ad.f713e47e.webp" alt="" class="ad__img sixth-ad__img">
       </a>
     </section>
     <!--  Sixth ad  -->
@@ -1936,7 +1774,7 @@
         <div class="product-cards__container cards--container swiper-wrapper">
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1946,7 +1784,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1957,7 +1795,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1967,7 +1805,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1978,7 +1816,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -1988,7 +1826,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -1999,7 +1837,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2009,7 +1847,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2020,7 +1858,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2030,7 +1868,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2041,7 +1879,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2051,7 +1889,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2062,7 +1900,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2072,7 +1910,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2083,7 +1921,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2093,7 +1931,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2105,12 +1943,12 @@
         </div>
         <span class="swiper-button-prev prev-btn swiper--btn">
           <svg class="prev-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevLeft"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevLeft"></use>
           </svg>
         </span>
         <span class="swiper-button-next next-btn swiper--btn">
           <svg class="next-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevRight"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevRight"></use>
           </svg>
         </span>
       </div>
@@ -2127,7 +1965,7 @@
         <div class="product-cards__container cards--container swiper-wrapper">
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2137,7 +1975,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2148,7 +1986,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2158,7 +1996,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2169,7 +2007,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2179,7 +2017,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2190,7 +2028,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2200,7 +2038,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2211,7 +2049,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2221,7 +2059,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2232,7 +2070,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2242,7 +2080,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2253,7 +2091,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2263,7 +2101,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2274,7 +2112,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2284,7 +2122,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2296,12 +2134,12 @@
         </div>
         <span class="swiper-button-prev prev-btn swiper--btn">
           <svg class="prev-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevLeft"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevLeft"></use>
           </svg>
         </span>
         <span class="swiper-button-next next-btn swiper--btn">
           <svg class="next-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevRight"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevRight"></use>
           </svg>
         </span>
       </div>
@@ -2318,7 +2156,7 @@
         <div class="product-cards__container cards--container swiper-wrapper">
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2328,7 +2166,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2339,7 +2177,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2349,7 +2187,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2360,7 +2198,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2370,7 +2208,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2381,7 +2219,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2391,7 +2229,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2402,7 +2240,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2412,7 +2250,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2423,7 +2261,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2433,7 +2271,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2444,7 +2282,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2454,7 +2292,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2465,7 +2303,7 @@
           </a>
           <a class="card__container swiper-slide" href="">
             <figure class="offer__card card card-home">
-              <img class="card__img" src="./src/img/pants.webp" alt="" />
+              <img class="card__img" src="/pants.55ea5e45.webp" alt="">
               <figcaption class="card__subtitle">
                 Prototyping items to create a lot if useless things...
               </figcaption>
@@ -2475,7 +2313,7 @@
                   <span class="card__seller-shop">Mobilekadeh</span>
                   <span class="card__seller-location">
                     <svg>
-                      <use xlink:href="./src/img/icons.svg#location"></use>
+                      <use xlink:href="/icons.21bad73c.svg#location"></use>
                     </svg>
                     dubai
                   </span>
@@ -2487,12 +2325,12 @@
         </div>
         <span class="swiper-button-prev prev-btn swiper--btn">
           <svg class="prev-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevLeft"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevLeft"></use>
           </svg>
         </span>
         <span class="swiper-button-next next-btn swiper--btn">
           <svg class="next-btn__icon">
-            <use xlink:href="./src/img/icons.svg#chevRight"></use>
+            <use xlink:href="/icons.21bad73c.svg#chevRight"></use>
           </svg>
         </span>
       </div>

@@ -1146,39 +1146,13 @@ a {
   font-size: 1.2rem;
 }
 
-.wishlisted {
-  color: #d73948;
-  border-color: #d73948;
+.message {
+  color: #089b4a;
+  font-size: 1.4rem;
 }
 
-.compared {
-  color: #50cd89;
-  border-color: #50cd89;
-}
-
-.popup__message {
-  color: #fff;
-  z-index: 3;
-  border-radius: 6px;
-  padding: 1rem 2rem;
-  font-size: 1.5rem;
-  transition: top .4s ease-in;
-  position: fixed;
-  top: -5rem;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-.popup__message.message--active {
-  top: 15rem;
-}
-
-.popup__message.error {
-  background-color: #d73948;
-}
-
-.popup__message.success {
-  background-color: #50cd89;
+.error {
+  color: #a82d2d;
 }
 
 .nav {
