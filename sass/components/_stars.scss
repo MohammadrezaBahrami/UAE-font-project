@@ -1,0 +1,65 @@
+.stars-outer {
+  position: relative;
+  display: inline-block;
+}
+
+.stars-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+}
+
+.number-rating {
+  font-size: 1.3rem;
+  vertical-align: 0.3rem;
+  margin-left: 0.5rem;
+}
+
+.stars-outer::before {
+  content: url("../src/img/star.svg") " " url("../src/img/star.svg") " "
+    url("../src/img/star.svg") " " url("../src/img/star.svg") " "
+    url("../src/img/star.svg");
+}
+
+.stars-inner::before {
+  content: url("../src/img/star-filled.svg") " "
+    url("../src/img/star-filled.svg") " " url("../src/img/star-filled.svg") " "
+    url("../src/img/star-filled.svg") " " url("../src/img/star-filled.svg");
+}
+
+.star-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.star-span {
+  fill: #cac7c7;
+}
+
+.user .star-icon {
+  pointer-events: none;
+}
+
+.stars:hover .star-span {
+  fill: #fb8200;
+  cursor: pointer;
+}
+
+.stars .star-span:hover {
+  fill: #fb8200;
+}
+
+.stars .star-span:hover ~ .star-span {
+  fill: #cac7c7;
+}
+
+.stars .star-span.active-star {
+  fill: #fb8200;
+}
+
+.stars.disabled-stars {
+  pointer-events: none;
+}

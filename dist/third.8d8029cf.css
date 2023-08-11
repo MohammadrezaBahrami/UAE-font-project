@@ -607,12 +607,7 @@ a {
   background-color: #0493e6;
 }
 
-.star-icon {
-  width: 1.6rem;
-  height: 1.6rem;
-}
-
-.user-score-title {
+-score-title {
   font-size: 1.3rem;
 }
 
@@ -711,7 +706,6 @@ a {
 .other__stores-container {
   background-color: #fff;
   border-radius: 4px;
-  position: relative;
 }
 
 .other__stores-card-container {
@@ -1236,18 +1230,9 @@ a {
 }
 
 .comments__btn--container {
-  cursor: pointer;
-  text-align: center;
-  background-color: #009ef7;
-  border-radius: 4px;
   margin: 1rem;
   padding: 1rem;
   font-size: 1.8rem;
-  transition: background-color .2s ease-in;
-}
-
-.comments__btn--container:hover {
-  background-color: #427ec2;
 }
 
 .comment__container {
@@ -1297,18 +1282,66 @@ a {
   border: 1px solid #009ef7;
 }
 
-.comment__form--btn {
-  cursor: pointer;
-  color: #fff;
-  background-color: #009ef7;
-  border: none;
-  border-radius: 4px;
-  padding: 1rem .8rem;
-  font-size: 1.4rem;
+.stars-outer {
+  display: inline-block;
+  position: relative;
 }
 
-.comment__form--btn:hover {
-  background-color: #0493e6;
+.stars-inner {
+  white-space: nowrap;
+  width: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.number-rating {
+  vertical-align: .3rem;
+  margin-left: .5rem;
+  font-size: 1.3rem;
+}
+
+.stars-outer:before {
+  content: url("star.e91b27c9.svg") " " url("star.e91b27c9.svg") " " url("star.e91b27c9.svg") " " url("star.e91b27c9.svg") " " url("star.e91b27c9.svg");
+}
+
+.stars-inner:before {
+  content: url("star-filled.c8da3354.svg") " " url("star-filled.c8da3354.svg") " " url("star-filled.c8da3354.svg") " " url("star-filled.c8da3354.svg") " " url("star-filled.c8da3354.svg");
+}
+
+.star-icon {
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+.star-span {
+  fill: #cac7c7;
+}
+
+.user .star-icon {
+  pointer-events: none;
+}
+
+.stars:hover .star-span {
+  fill: #fb8200;
+  cursor: pointer;
+}
+
+.stars .star-span:hover {
+  fill: #fb8200;
+}
+
+.stars .star-span:hover ~ .star-span {
+  fill: #cac7c7;
+}
+
+.stars .star-span.active-star {
+  fill: #fb8200;
+}
+
+.stars.disabled-stars {
+  pointer-events: none;
 }
 
 /*# sourceMappingURL=third.8d8029cf.css.map */
