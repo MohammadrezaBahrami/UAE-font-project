@@ -6,7 +6,7 @@
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
 
-    <link rel="stylesheet" href="/third.b58dee26.css">
+    <link rel="stylesheet" href="/third.8d8029cf.css">
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer=""></script>
 
@@ -630,16 +630,14 @@
         <div class="other__stores-container">
           <div class="other__stores-tabs-container">
             <ul class="other-stores-tabs-list tabs">
-              <li data-tab-target="#other-stores" class="tab overview-tab active-tab">
+              <li data-tab="1" class="stores__tab tab tab--active">
                 Other Stores
               </li>
-              <li data-tab-target="#comments" class="specifications-tab">
-                Reviews
-              </li>
+              <li data-tab="2" class="reviews__tab tab">Reviews</li>
             </ul>
           </div>
 
-          <div class="other__stores-card-container">
+          <div class="other__stores-card-container tab__content tab__content--1 content--active">
             <div class="other__store-card">
               <div class="other__store-card-left">
                 <div class="other__store-product-img-container">
@@ -819,6 +817,65 @@
             <div class="other__store-btn-container">
               <a class="other__store-btn" href="">Other 20 Stores</a>
             </div>
+          </div>
+
+          <div class="comments tab__content tab__content--2">
+            <div class="comments__view">
+              <div class="comment__container">
+                <div class="comment__details">
+                  <h3>Mohammadreza</h3>
+                  <span>8/14/2022</span>
+                </div>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam nobis consectetur, mollitia molestiae distinctio
+                  praesentium corporis eligendi quis, optio iure voluptatibus
+                  necessitatibus dolor illo minus ipsam nesciunt suscipit
+                  veniam, explicabo fugiat aliquid hic. Repellendus temporibus,
+                  nesciunt dicta eos maiores est. lorem10
+                </p>
+              </div>
+              <div class="comment__container">
+                <div class="comment__details">
+                  <h3>Mohammadreza</h3>
+                  <span>8/14/2022</span>
+                </div>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam nobis consectetur, mollitia molestiae distinctio
+                  praesentium corporis eligendi quis, optio iure voluptatibus
+                  necessitatibus dolor illo minus ipsam nesciunt suscipit
+                  veniam, explicabo fugiat aliquid hic. Repellendus temporibus,
+                  nesciunt dicta eos maiores est. lorem10
+                </p>
+              </div>
+              <div class="comment__container">
+                <div class="comment__details">
+                  <h3>Mohammadreza</h3>
+                  <span>8/14/2022</span>
+                </div>
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Aliquam nobis consectetur, mollitia molestiae distinctio
+                  praesentium corporis eligendi quis, optio iure voluptatibus
+                  necessitatibus dolor illo minus ipsam nesciunt suscipit
+                  veniam, explicabo fugiat aliquid hic. Repellendus temporibus,
+                  nesciunt dicta eos maiores est. lorem10
+                </p>
+              </div>
+
+              <div class="comments__btn--container">
+                <a href="">Show 20 more comments</a>
+              </div>
+            </div>
+            <form action="" class="comment__form">
+              <textarea placeholder="leave a comment" maxlength="280"></textarea>
+              <div>
+                <button class="comment__form--btn comment--btn">
+                  Add Comment
+                </button>
+              </div>
+            </form>
           </div>
         </div>
 
