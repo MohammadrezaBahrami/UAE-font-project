@@ -1,3 +1,3 @@
 import slider from "./slider";
-import swiper from "./swiper";
-import primaryCategory from "./primaryCategory";
+import swiper from "../common/swiper";
+import primaryCategory from "../common/primaryCategory";

@@ -577,12 +577,12 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _slider = require("./slider");
 var _sliderDefault = parcelHelpers.interopDefault(_slider);
-var _swiper = require("./swiper");
+var _swiper = require("../common/swiper");
 var _swiperDefault = parcelHelpers.interopDefault(_swiper);
-var _primaryCategory = require("./primaryCategory");
+var _primaryCategory = require("../common/primaryCategory");
 var _primaryCategoryDefault = parcelHelpers.interopDefault(_primaryCategory);
 
-},{"./slider":"9ICf4","./swiper":"8TPxA","./primaryCategory":"6vUMu","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9ICf4":[function(require,module,exports) {
+},{"./slider":"9ICf4","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../common/swiper":"4oE2f","../common/primaryCategory":"6GnxI"}],"9ICf4":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 class Slider {
@@ -670,7 +670,7 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"8TPxA":[function(require,module,exports) {
+},{}],"4oE2f":[function(require,module,exports) {
 // init Swiper:
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -687,7 +687,7 @@ exports.default = swiper = new Swiper(".swiper", {
     }
 });
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6vUMu":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6GnxI":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 class PrimaryCategory {

@@ -575,27 +575,36 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"cJx0y":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _swiperJs = require("../home/swiper.js");
+var _swiperJs = require("../common/swiper.js");
 var _swiperJsDefault = parcelHelpers.interopDefault(_swiperJs);
 var _asideCategoryJs = require("./asideCategory.js");
 var _asideCategoryJsDefault = parcelHelpers.interopDefault(_asideCategoryJs);
 
-},{"../home/swiper.js":"8TPxA","./asideCategory.js":"4TfsD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8TPxA":[function(require,module,exports) {
-// init Swiper:
+},{"./asideCategory.js":"4TfsD","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","../common/swiper.js":"4oE2f"}],"4TfsD":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-exports.default = swiper = new Swiper(".swiper", {
-    // configure Swiper to use modules
-    direction: "horizontal",
-    loop: false,
-    slidesPerView: "auto",
-    resizeReInit: true,
-    slidesOffsetAfter: 20,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+class AsideCategory {
+    _asideCategoriesContainer = document.querySelector(".aside__categories-container");
+    _asideCategoriesMenu = document.querySelector(".aside__categories-menu");
+    _header;
+    _item;
+    constructor(){
+        this._asideCategoriesContainer.addEventListener("click", this._openSideCategory.bind(this));
+        this._asideCategoriesMenu.addEventListener("click", this._openSideCategoryMenus.bind(this));
     }
-});
+    _openSideCategory(e) {
+        this._header = e.target.closest(".aside__categories-header");
+        if (!this._header) return;
+        document.querySelector(".aside__categories-menu").classList.toggle("aside__categories-menu--active");
+        this._header.classList.toggle("aside__categories-header--active");
+    }
+    _openSideCategoryMenus(e) {
+        this._item = e.target.closest(".aside__categories-item-title");
+        if (!this._item) return;
+        this._item.classList.toggle("aside__categories-item-title--active");
+    }
+}
+exports.default = new AsideCategory();
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
 exports.interopDefault = function(a) {
@@ -627,31 +636,22 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"4TfsD":[function(require,module,exports) {
+},{}],"4oE2f":[function(require,module,exports) {
+// init Swiper:
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-class AsideCategory {
-    _asideCategoriesContainer = document.querySelector(".aside__categories-container");
-    _asideCategoriesMenu = document.querySelector(".aside__categories-menu");
-    _header;
-    _item;
-    constructor(){
-        this._asideCategoriesContainer.addEventListener("click", this._openSideCategory.bind(this));
-        this._asideCategoriesMenu.addEventListener("click", this._openSideCategoryMenus.bind(this));
+exports.default = swiper = new Swiper(".swiper", {
+    // configure Swiper to use modules
+    direction: "horizontal",
+    loop: false,
+    slidesPerView: "auto",
+    resizeReInit: true,
+    slidesOffsetAfter: 20,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
     }
-    _openSideCategory(e) {
-        this._header = e.target.closest(".aside__categories-header");
-        if (!this._header) return;
-        document.querySelector(".aside__categories-menu").classList.toggle("aside__categories-menu--active");
-        this._header.classList.toggle("aside__categories-header--active");
-    }
-    _openSideCategoryMenus(e) {
-        this._item = e.target.closest(".aside__categories-item-title");
-        if (!this._item) return;
-        this._item.classList.toggle("aside__categories-item-title--active");
-    }
-}
-exports.default = new AsideCategory();
+});
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["6EF4h","cJx0y"], "cJx0y", "parcelRequiree459")
 

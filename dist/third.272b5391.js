@@ -575,9 +575,9 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 
 },{}],"1aVTw":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-var _swiperJs = require("../home/swiper.js");
+var _swiperJs = require("../common/swiper.js");
 var _swiperJsDefault = parcelHelpers.interopDefault(_swiperJs);
-var _primaryCategoryJs = require("../home/primaryCategory.js");
+var _primaryCategoryJs = require("../common/primaryCategory.js");
 var _primaryCategoryJsDefault = parcelHelpers.interopDefault(_primaryCategoryJs);
 var _notificationJs = require("./notification.js");
 var _notificationJsDefault = parcelHelpers.interopDefault(_notificationJs);
@@ -586,102 +586,7 @@ var _tabsJsDefault = parcelHelpers.interopDefault(_tabsJs);
 var _ratingsJs = require("./ratings.js");
 var _ratingsJsDefault = parcelHelpers.interopDefault(_ratingsJs);
 
-},{"../home/swiper.js":"8TPxA","../home/primaryCategory.js":"6vUMu","./notification.js":"8cRUp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./tabs.js":"akbE2","./ratings.js":"d9MKk"}],"8TPxA":[function(require,module,exports) {
-// init Swiper:
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-exports.default = swiper = new Swiper(".swiper", {
-    // configure Swiper to use modules
-    direction: "horizontal",
-    loop: false,
-    slidesPerView: "auto",
-    resizeReInit: true,
-    slidesOffsetAfter: 20,
-    navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
-    }
-});
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
-exports.interopDefault = function(a) {
-    return a && a.__esModule ? a : {
-        default: a
-    };
-};
-exports.defineInteropFlag = function(a) {
-    Object.defineProperty(a, "__esModule", {
-        value: true
-    });
-};
-exports.exportAll = function(source, dest) {
-    Object.keys(source).forEach(function(key) {
-        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
-        Object.defineProperty(dest, key, {
-            enumerable: true,
-            get: function() {
-                return source[key];
-            }
-        });
-    });
-    return dest;
-};
-exports.export = function(dest, destName, get) {
-    Object.defineProperty(dest, destName, {
-        enumerable: true,
-        get: get
-    });
-};
-
-},{}],"6vUMu":[function(require,module,exports) {
-var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
-parcelHelpers.defineInteropFlag(exports);
-class PrimaryCategory {
-    _primaryCategoryContainer = document.querySelector(".primary__category");
-    _subCategories = this._primaryCategoryContainer.querySelectorAll(".sub__category");
-    _categoryItems = this._primaryCategoryContainer.querySelectorAll(".primary__category--item");
-    _item;
-    _catItem;
-    constructor(){
-        this._primaryCategoryContainer.addEventListener("click", this._toggleCategory.bind(this));
-        document.addEventListener("click", this._hideSubCategory.bind(this));
-    }
-    _toggleCategory(e) {
-        this._activeCategory(e);
-        this._item = e.target.closest(".primary__category--item");
-        if (!this._item) return;
-        this._categoryHandler(this._item);
-    }
-    _categoryHandler(item) {
-        this._subCategories.forEach((category)=>{
-            if (category.classList.contains("sub__category--active") && item.dataset.category === category.dataset.category) item.classList.remove("primary__category--item-active");
-            if (item.dataset.category === category.dataset.category) category.classList.toggle("sub__category--active");
-            if (item.dataset.category !== category.dataset.category) category.classList.remove("sub__category--active");
-        });
-    }
-    _removeActiveCategoryItem() {
-        this._categoryItems.forEach((cat)=>{
-            cat.classList.remove("primary__category--item-active");
-        });
-    }
-    _activeCategory(e) {
-        this._catItem = e.target.closest(".primary__category--item");
-        if (!this._catItem) return;
-        this._removeActiveCategoryItem();
-        this._catItem.classList.add("primary__category--item-active");
-    }
-    _hideSubCategory(e) {
-        if (!this._primaryCategoryContainer.contains(e.target)) {
-            this._subCategories.forEach((subCat)=>{
-                subCat.classList.remove("sub__category--active");
-            });
-            this._removeActiveCategoryItem();
-        }
-    }
-}
-exports.default = new PrimaryCategory();
-
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"8cRUp":[function(require,module,exports) {
+},{"./notification.js":"8cRUp","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./tabs.js":"akbE2","./ratings.js":"d9MKk","../common/swiper.js":"4oE2f","../common/primaryCategory.js":"6GnxI"}],"8cRUp":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _iconsSvg = require("url:../../src/img/icons.svg");
@@ -863,6 +768,36 @@ exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
 exports.getOrigin = getOrigin;
 
+},{}],"gkKU3":[function(require,module,exports) {
+exports.interopDefault = function(a) {
+    return a && a.__esModule ? a : {
+        default: a
+    };
+};
+exports.defineInteropFlag = function(a) {
+    Object.defineProperty(a, "__esModule", {
+        value: true
+    });
+};
+exports.exportAll = function(source, dest) {
+    Object.keys(source).forEach(function(key) {
+        if (key === "default" || key === "__esModule" || dest.hasOwnProperty(key)) return;
+        Object.defineProperty(dest, key, {
+            enumerable: true,
+            get: function() {
+                return source[key];
+            }
+        });
+    });
+    return dest;
+};
+exports.export = function(dest, destName, get) {
+    Object.defineProperty(dest, destName, {
+        enumerable: true,
+        get: get
+    });
+};
+
 },{}],"akbE2":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
@@ -927,6 +862,71 @@ class Ratings {
     }
 }
 exports.default = new Ratings();
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"4oE2f":[function(require,module,exports) {
+// init Swiper:
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+exports.default = swiper = new Swiper(".swiper", {
+    // configure Swiper to use modules
+    direction: "horizontal",
+    loop: false,
+    slidesPerView: "auto",
+    resizeReInit: true,
+    slidesOffsetAfter: 20,
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev"
+    }
+});
+
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"6GnxI":[function(require,module,exports) {
+var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
+parcelHelpers.defineInteropFlag(exports);
+class PrimaryCategory {
+    _primaryCategoryContainer = document.querySelector(".primary__category");
+    _subCategories = this._primaryCategoryContainer.querySelectorAll(".sub__category");
+    _categoryItems = this._primaryCategoryContainer.querySelectorAll(".primary__category--item");
+    _item;
+    _catItem;
+    constructor(){
+        this._primaryCategoryContainer.addEventListener("click", this._toggleCategory.bind(this));
+        document.addEventListener("click", this._hideSubCategory.bind(this));
+    }
+    _toggleCategory(e) {
+        this._activeCategory(e);
+        this._item = e.target.closest(".primary__category--item");
+        if (!this._item) return;
+        this._categoryHandler(this._item);
+    }
+    _categoryHandler(item) {
+        this._subCategories.forEach((category)=>{
+            if (category.classList.contains("sub__category--active") && item.dataset.category === category.dataset.category) item.classList.remove("primary__category--item-active");
+            if (item.dataset.category === category.dataset.category) category.classList.toggle("sub__category--active");
+            if (item.dataset.category !== category.dataset.category) category.classList.remove("sub__category--active");
+        });
+    }
+    _removeActiveCategoryItem() {
+        this._categoryItems.forEach((cat)=>{
+            cat.classList.remove("primary__category--item-active");
+        });
+    }
+    _activeCategory(e) {
+        this._catItem = e.target.closest(".primary__category--item");
+        if (!this._catItem) return;
+        this._removeActiveCategoryItem();
+        this._catItem.classList.add("primary__category--item-active");
+    }
+    _hideSubCategory(e) {
+        if (!this._primaryCategoryContainer.contains(e.target)) {
+            this._subCategories.forEach((subCat)=>{
+                subCat.classList.remove("sub__category--active");
+            });
+            this._removeActiveCategoryItem();
+        }
+    }
+}
+exports.default = new PrimaryCategory();
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["bsdGV","1aVTw"], "1aVTw", "parcelRequiree459")
 

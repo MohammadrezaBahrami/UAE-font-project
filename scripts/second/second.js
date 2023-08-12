@@ -1,2 +1,2 @@
-import Swiper from "../home/swiper.js";
+import swiper from "../common/swiper.js";
 import asideCategory from "./asideCategory.js";
