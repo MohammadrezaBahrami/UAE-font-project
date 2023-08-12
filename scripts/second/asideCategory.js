@@ -5,6 +5,9 @@ class AsideCategory {
 
   _asideCategoriesMenu = document.querySelector(".aside__categories-menu");
 
+  _header;
+  _item;
+
   constructor() {
     this._asideCategoriesContainer.addEventListener(
       "click",
@@ -18,23 +21,23 @@ class AsideCategory {
   }
 
   _openSideCategory(e) {
-    const header = e.target.closest(".aside__categories-header");
+    this._header = e.target.closest(".aside__categories-header");
 
-    if (!header) return;
+    if (!this._header) return;
 
     document
       .querySelector(".aside__categories-menu")
       .classList.toggle("aside__categories-menu--active");
 
-    header.classList.toggle("aside__categories-header--active");
+    this._header.classList.toggle("aside__categories-header--active");
   }
 
   _openSideCategoryMenus(e) {
-    const item = e.target.closest(".aside__categories-item-title");
+    this._item = e.target.closest(".aside__categories-item-title");
 
-    if (!item) return;
+    if (!this._item) return;
 
-    item.classList.toggle("aside__categories-item-title--active");
+    this._item.classList.toggle("aside__categories-item-title--active");
   }
 }
 

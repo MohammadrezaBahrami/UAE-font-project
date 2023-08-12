@@ -640,15 +640,17 @@ class PrimaryCategory {
     _primaryCategoryContainer = document.querySelector(".primary__category");
     _subCategories = this._primaryCategoryContainer.querySelectorAll(".sub__category");
     _categoryItems = this._primaryCategoryContainer.querySelectorAll(".primary__category--item");
+    _item;
+    _catItem;
     constructor(){
         this._primaryCategoryContainer.addEventListener("click", this._toggleCategory.bind(this));
         document.addEventListener("click", this._hideSubCategory.bind(this));
     }
     _toggleCategory(e) {
         this._activeCategory(e);
-        const item = e.target.closest(".primary__category--item");
-        if (!item) return;
-        this._categoryHandler(item);
+        this._item = e.target.closest(".primary__category--item");
+        if (!this._item) return;
+        this._categoryHandler(this._item);
     }
     _categoryHandler(item) {
         this._subCategories.forEach((category)=>{
@@ -663,10 +665,10 @@ class PrimaryCategory {
         });
     }
     _activeCategory(e) {
-        const catItem = e.target.closest(".primary__category--item");
-        if (!catItem) return;
+        this._catItem = e.target.closest(".primary__category--item");
+        if (!this._catItem) return;
         this._removeActiveCategoryItem();
-        catItem.classList.add("primary__category--item-active");
+        this._catItem.classList.add("primary__category--item-active");
     }
     _hideSubCategory(e) {
         if (!this._primaryCategoryContainer.contains(e.target)) {
@@ -694,6 +696,11 @@ class Notification {
     _wishlistProductsContainer = document.querySelector(".wishlist__products--container");
     _productImgSrc = document.querySelector(".store__card-img").src;
     _messageElement = document.querySelector(".popup__message");
+    _removeBtn;
+    _src;
+    _popupProduct;
+    _popupProductImages;
+    _items;
     _timeout;
     constructor(){
         document.addEventListener("DOMContentLoaded", (function() {
@@ -703,18 +710,18 @@ class Notification {
             this._changeIconColor("wishlistItems", this._wishlistIcon, "wishlisted");
         }).bind(this));
         this._wishlistPopup.addEventListener("click", (function(e) {
-            const removeBtn = e.target.closest("svg");
-            if (!removeBtn) return;
-            const src = removeBtn.previousElementSibling.src;
-            this._removeElement(removeBtn, this._wishlistIcon, "wishlisted");
-            this._removeItemFromLS("wishlistItems", src);
+            this._removeBtn = e.target.closest("svg");
+            if (!this._removeBtn) return;
+            this._src = this._removeBtn.previousElementSibling.src;
+            this._removeElement(this._removeBtn, this._wishlistIcon, "wishlisted");
+            this._removeItemFromLS("wishlistItems", this._src);
         }).bind(this));
         this._comparePopup.addEventListener("click", (function(e) {
-            const removeBtn = e.target.closest("svg");
-            if (!removeBtn) return;
-            const src = removeBtn.previousElementSibling.src;
-            this._removeElement(removeBtn, this._compareIcon, "compared");
-            this._removeItemFromLS("compareItems", src);
+            this._removeBtn = e.target.closest("svg");
+            if (!this._removeBtn) return;
+            this._src = this._removeBtn.previousElementSibling.src;
+            this._removeElement(this._removeBtn, this._compareIcon, "compared");
+            this._removeItemFromLS("compareItems", this._src);
         }).bind(this));
         this._wishlistIcon.addEventListener("click", (function() {
             this._wishlistIcon.classList.add("wishlisted");
@@ -738,18 +745,18 @@ class Notification {
         });
     }
     _createPopupElements(imgClassName, container, src) {
-        const popupProduct = document.createElement("div");
-        popupProduct.classList.add("popup__product");
-        const imgs = document.querySelectorAll(`.${imgClassName}`);
+        this._popupProduct = document.createElement("div");
+        this._popupProduct.classList.add("popup__product");
+        this._popupProductImages = document.querySelectorAll(`.${imgClassName}`);
         if (container.childElementCount >= 4) {
             this._showMessage("Maximum amount of items reached!", "error");
             return;
         }
-        for(let i = 0; i < imgs.length; i++)if (imgs[i].src === this._productImgSrc) {
+        for(let i = 0; i < this._popupProductImages.length; i++)if (this._popupProductImages[i].src === this._productImgSrc) {
             this._showMessage("Item already added!", "error");
             return;
         }
-        popupProduct.innerHTML = `
+        this._popupProduct.innerHTML = `
         <img class="${imgClassName}" src="${src}" alt="" />
         <svg>
            <use xlink:href="${0, _iconsSvgDefault.default}#xMark"></use>
@@ -757,18 +764,18 @@ class Notification {
   `;
         if (imgClassName === "wishlist__img" && !localStorage.getItem("wishlistItems")?.includes(this._productImgSrc)) this._saveItemToLS("wishlistItems", this._productImgSrc);
         if (imgClassName === "compare__img" && !localStorage.getItem("compareItems")?.includes(this._productImgSrc)) this._saveItemToLS("compareItems", this._productImgSrc);
-        container.appendChild(popupProduct);
+        container.appendChild(this._popupProduct);
     }
     _createElementsOnLoad(imgClassName, container, src) {
-        const popupProduct = document.createElement("div");
-        popupProduct.classList.add("popup__product");
-        popupProduct.innerHTML = `
+        this._popupProduct = document.createElement("div");
+        this._popupProduct.classList.add("popup__product");
+        this._popupProduct.innerHTML = `
   <img class="${imgClassName}" src="${src}" alt="" />
   <svg>
   <use xlink:href="${0, _iconsSvgDefault.default}#xMark"></use>
   </svg>
   `;
-        container.appendChild(popupProduct);
+        container.appendChild(this._popupProduct);
     }
     _removeElement(element, eventElement, className) {
         element.parentElement.remove();
@@ -780,31 +787,28 @@ class Notification {
         else secondPopup.style.bottom = "18rem";
     }
     _saveItemToLS(LSItemName, item) {
-        let items;
-        if (localStorage.getItem(LSItemName) === null) items = [];
-        else items = JSON.parse(localStorage.getItem(LSItemName));
-        items.push(item);
-        localStorage.setItem(LSItemName, JSON.stringify(items));
+        if (localStorage.getItem(LSItemName) === null) this._items = [];
+        else this._items = JSON.parse(localStorage.getItem(LSItemName));
+        this._items.push(item);
+        localStorage.setItem(LSItemName, JSON.stringify(this._items));
     }
     _removeItemFromLS(LSItemName, item) {
-        let items;
-        if (localStorage.getItem(LSItemName) === null) items = [];
-        else items = JSON.parse(localStorage.getItem(LSItemName));
-        items.splice(items.indexOf(item), 1);
-        localStorage.setItem(LSItemName, JSON.stringify(items));
+        if (localStorage.getItem(LSItemName) === null) this._items = [];
+        else this._items = JSON.parse(localStorage.getItem(LSItemName));
+        this._items.splice(this._items.indexOf(item), 1);
+        localStorage.setItem(LSItemName, JSON.stringify(this._items));
     }
     _getItemsFromLS(LSItemName, imgClassName, container) {
-        let items;
-        if (localStorage.getItem(LSItemName) === null) items = [];
-        else items = JSON.parse(localStorage.getItem(LSItemName));
-        items.forEach((item)=>{
+        if (localStorage.getItem(LSItemName) === null) this._items = [];
+        else this._items = JSON.parse(localStorage.getItem(LSItemName));
+        this._items.forEach((item)=>{
             this._createElementsOnLoad(imgClassName, container, item);
         });
     }
     _changeIconColor(LSItemName, icon, className) {
-        const items = JSON.parse(localStorage.getItem(LSItemName));
-        if (!items) return;
-        items.some((item)=>{
+        this._items = JSON.parse(localStorage.getItem(LSItemName));
+        if (!this._items) return;
+        this._items.some((item)=>{
             if (item === this._productImgSrc) icon.classList.add(className);
         });
     }
@@ -866,6 +870,7 @@ class Tabs {
     _tabs = document.querySelectorAll(".tab");
     _tabsContainer = document.querySelector(".other__stores-tabs-container");
     _tabsContent = document.querySelectorAll(".tab__content");
+    _clickedTab;
     constructor(){
         this._tabsContainer.addEventListener("click", this._changeActiveTab.bind(this));
     }
@@ -876,12 +881,12 @@ class Tabs {
         this._tabsContent.forEach((tabContent)=>tabContent.classList.remove("content--active"));
     }
     _changeActiveTab(e) {
-        const clickedTab = e.target.closest(".tab");
-        if (!clickedTab) return;
+        this._clickedTab = e.target.closest(".tab");
+        if (!this._clickedTab) return;
         this._removeActiveTab();
-        clickedTab.classList.add("tab--active");
+        this._clickedTab.classList.add("tab--active");
         this._removeActiveTabContent();
-        document.querySelector(`.tab__content--${clickedTab.dataset.tab}`).classList.add("content--active");
+        document.querySelector(`.tab__content--${this._clickedTab.dataset.tab}`).classList.add("content--active");
     }
 }
 exports.default = new Tabs();
@@ -896,6 +901,7 @@ class Ratings {
     _starPercentageRounded;
     _starsWrapper = document.querySelector(".stars");
     _star;
+    _id;
     _stars = document.querySelectorAll(".stars span");
     constructor(){
         document.addEventListener("DOMContentLoaded", this._getRatings.bind(this));
@@ -905,9 +911,9 @@ class Ratings {
         this._star = e.target.closest(".stars span");
         if (!this._star) return;
         this._starsWrapper.classList.add("disabled-stars");
-        const id = this._star.dataset.id;
+        this._id = this._star.dataset.id;
         this._stars.forEach((star, index)=>{
-            if (index <= id) star.classList.add("active-star");
+            if (index <= this._id) star.classList.add("active-star");
         });
     }
     _getRatings() {

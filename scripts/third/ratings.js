@@ -5,6 +5,7 @@ class Ratings {
   _starPercentageRounded;
   _starsWrapper = document.querySelector(".stars");
   _star;
+  _id;
   _stars = document.querySelectorAll(".stars span");
 
   constructor() {
@@ -17,10 +18,10 @@ class Ratings {
     if (!this._star) return;
     this._starsWrapper.classList.add("disabled-stars");
 
-    const id = this._star.dataset.id;
+    this._id = this._star.dataset.id;
 
     this._stars.forEach((star, index) => {
-      if (index <= id) {
+      if (index <= this._id) {
         star.classList.add("active-star");
       }
     });

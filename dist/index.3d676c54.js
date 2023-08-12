@@ -694,15 +694,17 @@ class PrimaryCategory {
     _primaryCategoryContainer = document.querySelector(".primary__category");
     _subCategories = this._primaryCategoryContainer.querySelectorAll(".sub__category");
     _categoryItems = this._primaryCategoryContainer.querySelectorAll(".primary__category--item");
+    _item;
+    _catItem;
     constructor(){
         this._primaryCategoryContainer.addEventListener("click", this._toggleCategory.bind(this));
         document.addEventListener("click", this._hideSubCategory.bind(this));
     }
     _toggleCategory(e) {
         this._activeCategory(e);
-        const item = e.target.closest(".primary__category--item");
-        if (!item) return;
-        this._categoryHandler(item);
+        this._item = e.target.closest(".primary__category--item");
+        if (!this._item) return;
+        this._categoryHandler(this._item);
     }
     _categoryHandler(item) {
         this._subCategories.forEach((category)=>{
@@ -717,10 +719,10 @@ class PrimaryCategory {
         });
     }
     _activeCategory(e) {
-        const catItem = e.target.closest(".primary__category--item");
-        if (!catItem) return;
+        this._catItem = e.target.closest(".primary__category--item");
+        if (!this._catItem) return;
         this._removeActiveCategoryItem();
-        catItem.classList.add("primary__category--item-active");
+        this._catItem.classList.add("primary__category--item-active");
     }
     _hideSubCategory(e) {
         if (!this._primaryCategoryContainer.contains(e.target)) {

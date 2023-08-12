@@ -8,6 +8,9 @@ class PrimaryCategory {
     ".primary__category--item"
   );
 
+  _item;
+  _catItem;
+
   constructor() {
     this._primaryCategoryContainer.addEventListener(
       "click",
@@ -20,11 +23,11 @@ class PrimaryCategory {
   _toggleCategory(e) {
     this._activeCategory(e);
 
-    const item = e.target.closest(".primary__category--item");
+    this._item = e.target.closest(".primary__category--item");
 
-    if (!item) return;
+    if (!this._item) return;
 
-    this._categoryHandler(item);
+    this._categoryHandler(this._item);
   }
 
   _categoryHandler(item) {
@@ -53,13 +56,13 @@ class PrimaryCategory {
   }
 
   _activeCategory(e) {
-    const catItem = e.target.closest(".primary__category--item");
+    this._catItem = e.target.closest(".primary__category--item");
 
-    if (!catItem) return;
+    if (!this._catItem) return;
 
     this._removeActiveCategoryItem();
 
-    catItem.classList.add("primary__category--item-active");
+    this._catItem.classList.add("primary__category--item-active");
   }
 
   _hideSubCategory(e) {

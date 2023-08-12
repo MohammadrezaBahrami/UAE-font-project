@@ -2,6 +2,7 @@ class Tabs {
   _tabs = document.querySelectorAll(".tab");
   _tabsContainer = document.querySelector(".other__stores-tabs-container");
   _tabsContent = document.querySelectorAll(".tab__content");
+  _clickedTab;
 
   constructor() {
     this._tabsContainer.addEventListener(
@@ -20,17 +21,17 @@ class Tabs {
   }
 
   _changeActiveTab(e) {
-    const clickedTab = e.target.closest(".tab");
+    this._clickedTab = e.target.closest(".tab");
 
-    if (!clickedTab) return;
+    if (!this._clickedTab) return;
 
     this._removeActiveTab();
-    clickedTab.classList.add("tab--active");
+    this._clickedTab.classList.add("tab--active");
 
     this._removeActiveTabContent();
 
     document
-      .querySelector(`.tab__content--${clickedTab.dataset.tab}`)
+      .querySelector(`.tab__content--${this._clickedTab.dataset.tab}`)
       .classList.add("content--active");
   }
 }
